@@ -1,0 +1,9 @@
+<form style="margin-top: 100px" [ngFormModel]="ratingForm" #f="ngForm" (submit)="addRating(f.value)">
+    <label>Name</label>
+    <input type="text" ngControl="name">
+    <label>Description</label>
+    <input type="text" ngControl="description">
+    <label>Location</label>
+    <input type="text" ngControl="location">
+    <button type="submit">Add</button>
+</form>
